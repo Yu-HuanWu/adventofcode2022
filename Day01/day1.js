@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.readFile('/Users/yu-huanwu/Desktop/adventofcode2022/Day01/input', 'utf8', (err, data) => {
+fs.readFile('Day01/input', 'utf8', (err, data) => {
     if (err) {
         console.error(err);
         return;
