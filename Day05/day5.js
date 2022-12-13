@@ -7,5 +7,9 @@ fs.readFile('Day05/input2', 'utf8', (err, data) => {
     }
 
     console.log(data)
+    parsedData=[];
+    data.split("\n").forEach((datum) => {
+        parsedData.push(datum)
+    })
 
 })
