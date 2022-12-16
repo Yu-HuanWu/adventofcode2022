@@ -23,6 +23,6 @@ fs.readFile('Day05/input2', 'utf8', (err, data) => {
         parsedData.push(datum)
     })
 
-    console.log(parsedData)
+    console.log(crate)
 
 })
