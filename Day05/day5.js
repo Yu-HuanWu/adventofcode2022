@@ -23,6 +23,12 @@ fs.readFile('Day05/input2', 'utf8', (err, data) => {
         parsedData.push(datum)
     })
 
-    console.log(crate)
+    // console.log(parsedData)
 
+    newParsedData=[]
+    parsedData.forEach((parsedDatum)=> {
+        temp = parsedDatum.split(" ");
+        newParsedData.push([temp[1], temp[3], temp[5]]);
+    })
+    console.log(newParsedData)
 })
