@@ -6,4 +6,5 @@ fs.readFile('Day06/input', 'utf8', (err, data) => {
         return;
     }
 
+    console.log(data)
 })
