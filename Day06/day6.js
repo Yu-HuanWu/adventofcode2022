@@ -6,5 +6,23 @@ fs.readFile('Day06/input', 'utf8', (err, data) => {
         return;
     }
 
-    console.log(data)
+    // console.log(data)
+    let packet = []
+    let answer = 0
+    let endLoop = false
+    data.split("").forEach((char, i) => {
+        if (endLoop) {
+            return;
+        }
+        if (packet.includes(char)) {
+            packet = [char]
+        } else {
+            packet.push(char)
+        }
+        if (packet.length === 4) {
+            answer = i +1;
+            endLoop = true
+        }
+    })
+    console.log(answer)
 })
