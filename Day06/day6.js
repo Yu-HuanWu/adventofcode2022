@@ -6,7 +6,7 @@ fs.readFile('Day06/input', 'utf8', (err, data) => {
         return;
     }
 
-    // console.log(data)
+    // part 1
     let packet = []
     let answer = 0
     let endLoop = false
@@ -25,4 +25,7 @@ fs.readFile('Day06/input', 'utf8', (err, data) => {
         }
     })
     console.log(answer)
+
+    // part 2
+    
 })
