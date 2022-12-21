@@ -27,5 +27,6 @@ fs.readFile('Day06/input', 'utf8', (err, data) => {
     console.log(answer)
 
     // part 2
-    
+    // same as above, just change if (packet.length === 14)
+
 })
