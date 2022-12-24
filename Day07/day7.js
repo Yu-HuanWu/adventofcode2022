@@ -12,4 +12,7 @@ fs.readFile('Day07/input', 'utf8', (err, data) => {
         parsedData.push(datum)
     })
 
+    let currDir;
+    
+
 })
