@@ -14,5 +14,9 @@ fs.readFile('Day07/input', 'utf8', (err, data) => {
 
     let currDir;
     let prevDir;
-
+    parsedData.forEach(datum=> {
+        if (datum.includes("dir")) {
+            currDir = datum
+        }
+    })
 })
