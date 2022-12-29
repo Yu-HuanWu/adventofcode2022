@@ -15,13 +15,15 @@ fs.readFile('Day07/input', 'utf8', (err, data) => {
     let currDir;
     let prevDir = [];
     parsedData.forEach(datum=> {
-        if (datum.includes("dir")) {
-            currDir = datum
-            prevDir.push(datum)
-        }
-        if (datum === "$ cd ..") {
-            prevDir.pop();
-            currDir = prevDir[prevDir.length-1]
+        if (datum.includes("$ cd ")) {
+            if (datum === "$ cd ..") {
+                prevDir.pop();
+                currDir = prevDir[prevDir.length-1]
+            } else {
+                newDir = datum.slice(5)
+                currDir = newDir
+                prevDir.push(newDir)
+            }
         }
     })
 })
