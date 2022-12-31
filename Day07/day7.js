@@ -15,7 +15,7 @@ fs.readFile('Day07/input', 'utf8', (err, data) => {
     let currDir;
     let prevDir = [];
     let allDir = {}
-    parsedData.forEach(datum=> {
+    parsedData.forEach((datum, i)=> {
         if (datum.includes("$ cd ")) {
             if (datum === "$ cd ..") {
                 prevDir.pop();
@@ -26,8 +26,12 @@ fs.readFile('Day07/input', 'utf8', (err, data) => {
                 prevDir.push(newDir)
                 if (!allDir[newDir]) {
                     allDir[newDir] = 0
+                } else {
+                    
                 }
             }
+        } else {
+
         }
     })
     console.log(currDir, prevDir, allDir)
