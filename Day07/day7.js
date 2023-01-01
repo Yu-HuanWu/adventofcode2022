@@ -26,9 +26,7 @@ fs.readFile('Day07/input', 'utf8', (err, data) => {
                 prevDir.push(newDir)
                 if (!allDir[newDir]) {
                     allDir[newDir] = 0
-                } else {
-                    
-                }
+                } 
             }
         } else {
 
