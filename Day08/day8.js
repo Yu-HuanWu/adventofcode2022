@@ -1,5 +1,9 @@
 const fs = require('fs');
 
+function checkSurrounding(middle, left, right, top, bottom) {
+    
+}
+
 fs.readFile('Day08/input', 'utf8', (err, data) => {
     if (err) {
         console.error(err);
