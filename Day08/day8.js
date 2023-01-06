@@ -1,7 +1,10 @@
 const fs = require('fs');
 
 function checkSurrounding(middle, left, right, top, bottom) {
-    
+    if (left > middle && right > middle && top > middle && bottom > middle) {
+        return true
+    }
+    return false
 }
 
 fs.readFile('Day08/input', 'utf8', (err, data) => {
