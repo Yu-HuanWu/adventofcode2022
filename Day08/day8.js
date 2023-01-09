@@ -24,7 +24,7 @@ fs.readFile('Day08/input', 'utf8', (err, data) => {
 
     for (let i = 0; i < parsedData.length; i ++) {
         for (let j = 0; j < parsedData[i].length; j++) {
-            checkSurrounding(parsedData[i][j])
+            checkSurrounding(parsedData[i][j], parsedData[i][j] || 0, )
         }
     }
     console.log(parsedData)
