@@ -1,6 +1,10 @@
 const fs = require('fs');
 
 function checkSurrounding(middle, left, right, top, bottom) {
+    if (left == undefined) { left = 0 }
+    if (right == undefined) { right = 0 }
+    if (top == undefined) { top = 0 }
+    if (bottom == undefined) { bottom = 0 }
     if (left > middle && right > middle && top > middle && bottom > middle) {
         return true
     }
@@ -24,7 +28,7 @@ fs.readFile('Day08/input', 'utf8', (err, data) => {
 
     for (let i = 0; i < parsedData.length; i ++) {
         for (let j = 0; j < parsedData[i].length; j++) {
-            checkSurrounding(parsedData[i][j], parsedData[i][j] || 0, )
+            checkSurrounding(parsedData[i][j], parsedData[i][j-1], parsedData[i][j+1],)
         }
     }
     console.log(parsedData)
