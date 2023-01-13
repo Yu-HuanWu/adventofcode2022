@@ -28,6 +28,7 @@ fs.readFile('Day08/input', 'utf8', (err, data) => {
 
     for (let i = 0; i < parsedData.length; i ++) {
         for (let j = 0; j < parsedData[i].length; j++) {
+            // check for the the whole row and column, all the way to edges
             checkSurrounding(parsedData[i][j], parsedData[i][j-1], parsedData[i][j+1], parsedData[i-1][j], parsedData[i+1][j])
         }
     }
